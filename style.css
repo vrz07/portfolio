@@ -683,3 +683,38 @@ body.dark .brand-watermark {
     }
 
 }
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.site-footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ddd;
+    background: #ffffff;
+}
+
+.site-footer span {
+    color: royalblue;
+    font-weight: bold;
+}
+
+/* DARK MODE */
+
+body.dark-mode .brand-watermark {
+
+    color: #f8fafc;
+
+    background: rgba(15, 23, 42, 0.65);
+
+    border-color: rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+
+        0 8px 25px rgba(0, 0, 0, 0.45);
+
+}
