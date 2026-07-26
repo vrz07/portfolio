@@ -575,3 +575,111 @@ nav a:hover {
     font-weight: bold;
     margin-bottom: -12px;
 }
+
+/* ==========================================
+   PREMIUM PRZ LABS BRAND WATERMARK
+========================================== */
+
+.brand-watermark {
+
+    position: fixed;
+
+    bottom: 18px;
+
+    right: 22px;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--text);
+
+    background: rgba(255, 255, 255, 0.28);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 8px 25px rgba(30, 41, 59, 0.18);
+
+    opacity: 0.78;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    transition: all 0.4s ease;
+
+}
+
+
+/* PRZ LABS Star */
+
+.brand-watermark span {
+
+    font-size: 16px;
+
+    line-height: 1;
+
+}
+
+
+/* DARK MODE */
+
+body.dark .brand-watermark {
+
+    color: #f8fafc;
+
+    background: rgba(15, 23, 42, 0.65);
+
+    border-color: rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+
+        0 8px 25px rgba(0, 0, 0, 0.45);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+    .brand-watermark {
+
+        bottom: 12px;
+
+        right: 12px;
+
+        padding: 6px 10px;
+
+        font-size: 10px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+    .brand-watermark span {
+
+        font-size: 13px;
+
+    }
+
+}
