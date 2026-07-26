@@ -1,242 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <meta name="description"
+        content="Pranjal Kumar Pandey - BCA student and Full Stack Web Developer portfolio showcasing web development projects and skills.">
+
+    <meta name="author" content="Pranjal Kumar Pandey">
+
+    <meta name="theme-color" content="#160810">
+
+    <title>Pranjal Kumar Pandey | Full-Stack Developer</title>
 
     <link rel="stylesheet" href="style.css">
-</head>    
+</head>
 
 <body>
 
-<nav>
-    <h2>Viraz</h2>
+    <nav>
+        <h2>PRZ LABS</h2>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    
-    <button id="theme-btn">🌙</button>
+        <ul id="main-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<div class="menu-toggle">☰</div>
+        <button id="theme-btn" type="button" aria-label="Toggle dark mode">🌙</button>
 
-</nav>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+            aria-controls="main-menu">☰</button>
 
-<section class="hero">
+    </nav>
 
-    <div class="hero-text">
-        <h1>Hiii,I'm <span>Viraz Bhardwaj</span></h1>
+    <section id="home" class="hero">
 
-        <h2>I'm <span id="typing"></span></h2>
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Pranjal Kumar Pandey</span></h1>
+            <h2>I'm <span id="typing"></span></h2>
 
-     <div class="hero-buttons">
-        <button class="hire-btn">Hire Me</button>
-        <button class="cv-btn">Download CV</button>
-    </div>
-    
-    <div class="social-icons">
-<a href="#">GitHub</a>
-<a href="#">LinkedIn</a>
-<a href="#">Instagram</a>
+            <div class="hero-buttons">
+                <a href="#contact" class="hire-btn">Hire Me</a>
+                <a href="CV/PRZ_CV.pdf" download class="cv-btn">Download CV</a>
+            </div>
 
-</div>
+            <div class="social-icons">
+                <a href="https://github.com/vrz07" target="_blank" rel="noopener noreferrer"
+                    class="github-btn">GitHub</a>
+                <a href="https://www.linkedin.com/in/przonly/" target="_blank" rel="noopener noreferrer"
+                    class="linkedin-btn">LinkedIn</a>
+                <a href="https://instagram.com/irl.prz__" target="_blank" rel="noopener noreferrer"
+                    class="instagram-btn">Instagram</a>
+            </div>
+        </div>
 
-    </div>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Pranjal Kumar Pandey - Full Stack Web Developer">
+        </div>
 
-    <div class="hero-image">
-     <img src="profile.jpg" alt="Profile Image">
-</div>
+    </section>
+    <section id="about" class="about hidden">
+        <h2>About Me</h2>
 
-</section>
+        <p>
+            Hi, I'm <b>Pranjal Kumar Pandey</b>. I'm currently pursuing BCA and learning Full Stack Web Development.
+            I love creating modern websites and learning new technologies every day.
+        </p>
 
-    <section class="about hidden">
-      <h2>About Me</h2>  
+    </section>
 
-    <p>
-      Hi,I'm <b>Viraz Bhardwaj</b>. I'm currently pursuing BCA and learning Full Stack Web Development.
-      I love creating modern websites and learning new technologies every day. 
-</p>
+    <section id="skills" class="skills hidden">
 
-</section>
+        <h2>My Skills</h2>
 
-<section class="skills hidden">
-
-    <h2>My Skills</h2>
-
-    <div class="skill-container">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">React</div>
-        <div class="card">Node.js</div>
-        <div class="card">MongoDB</div>  
-
-    </div>
-
-</section>
-
-<section class="projects hidden">
-
-    <h2>My Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
-            <img src="images/portfolio.jpg" alt="Portfolio Website">
-        
-            <div class="project-icon">💻</div>
-            <h3>Portfolio Website</h3>
-        <p>My personal portfolio built using HTML & CSS.</p>
-        
-        <div class="project-buttons">
-            <button class="live-btn">Live Demo</button>
-            <button class="github-btn">GitHub</button>
+        <div class="skill-container">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">React</div>
+            <div class="card">Node.js</div>
+            <div class="card">MongoDB</div>
 
         </div>
 
-    </div>
+    </section>
 
-    <div class="project-card">
-        <img src="images/calculator.jpg" alt="Calculator">
+    <section id="projects" class="projects hidden">
 
-             <div class="project-icon">🧮</div>
+        <h2>My Projects</h2>
 
-        <h3>Calculator</h3>
-        <p>A simple calculator made with HTML,CSS & JavaScript</p>
-        
-        <div class="project-buttons">
-            <button class="live-btn">Live Demo</button>
-            <button class="github-btn">GitHub</button>
-    
+        <div class="project-container">
+
+            <article class="project-card">
+
+                <div class="project-icon" aria-hidden="true">💻</div>
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio built using HTML & CSS.</p>
+
+                <div class="project-buttons">
+                    <a class="live-btn" href="https://portfolio-six-pearl-89.vercel.app/" target="_blank"
+                        rel="noopener noreferrer">Live Demo</a>
+
+                    <a class="project-github-btn" href="https://github.com/vrz07/portfolio" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+
+                <div class="project-icon" aria-hidden="true">🧮</div>
+
+                <h3>Calculator</h3>
+                <p>A simple calculator built with HTML, CSS & JavaScript.</p>
+
+                <div class="project-buttons">
+                    <a class="live-btn" href="https://smart-calculator-vrz.vercel.app/" target="_blank"
+                        rel="noopener noreferrer">Live Demo</a>
+
+                    <a class="project-github-btn" href="https://github.com/vrz07/Smart-Calculator" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+
+                </div>
+            </article>
+
+            <article class="project-card">
+
+                <div class="project-icon" aria-hidden="true">🌤️</div>
+
+                <h3>Weather App</h3>
+                <p>A weather app built with JavaScript and a weather API.</p>
+
+                <div class="project-buttons">
+                    <a class="live-btn" href="https://weather-dashboard-mu-drab.vercel.app/" target="_blank"
+                        rel="noopener noreferrer">Live Demo</a>
+
+                    <a class="project-github-btn" href="https://github.com/vrz07/weather-app" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+
+                </div>
+            </article>
+
+            <article class="project-card">
+
+                <div class="project-icon" aria-hidden="true">✅</div>
+
+                <h3>To-Do App</h3>
+
+                <p>A To-Do app built with HTML, CSS & JavaScript.</p>
+
+                <div class="project-buttons">
+                    <a class="live-btn" href="https://to-do-app-orpin-delta.vercel.app/" target="_blank"
+                        rel="noopener noreferrer">Live Demo</a>
+
+                    <a class="project-github-btn" href="https://github.com/vrz07/To-Do-App" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>
+
+                </div>
+            </article>
+
         </div>
-    </div>
 
-    <div class="project-card">
-        <img src="images/weather app.jpg" alt="Weather App">
+    </section>
 
-        <div class="project-icon">🌤️</div>
+    <section id="contact" class="contact hidden">
 
-        <h3>Weather App</h3>
-        <p>Weather app using API and JavaScript</p>
-        
-        <div class="project-buttons">
-            <button class="live-btn">Live Demo</button>
-            <button class="github-btn">GitHub</button>
-    
-        </div>
-    </div>
+        <h2>Contact Me</h2>
 
-    <div class="project-card">
-        <h3>To Do-App</h3>
-        <img src="images/To-do.jpg" alt="To-Do App">
+        <form id="contact-form" action="https://formspree.io/f/mvzeadgj" method="post">
 
-         <div class="project-icon">✅</div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-        <p>To-Do App using HTML,CSS & JavaScript</p>
-       
-        <div class="project-buttons">
-            <button class="live-btn">Live Demo</button>
-            <button class="github-btn">GitHub</button>
-    
-        </div>
-    </div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
 
-</section>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
 
-<section class="contact hidden">
-<h2>Contact Me</h2>
-<form>
+            <button type="submit">Send Message</button>
 
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Email-Address">
-    <textarea placeholder="Your Message"></textarea>
-    <button>Send Message</button>
-</form>
+        </form>
 
-</section>
+    </section>
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
